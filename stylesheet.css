@@ -1,0 +1,45 @@
+body {
+  background-color:  #000000;
+}
+.iframe{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.video-container iframe{
+  /* Video established tall and wide */
+  min-width:  100%;
+  min-height: 100%;
+
+  /* Setting width & height to auto prevent the browser from comrpessing video */
+  width: auto;
+  height: auto;
+
+  /* Centered video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.worlddiv {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+.earth_spinning {
+  position:fixed;
+       left: 50%;
+       top:  50%;
+       /*
+           if, for instance, the image is 64x64 pixels,
+           then "move" it half its width/height to the
+           top/left by using negative margins
+       */
+       margin-left: -144px;
+       margin-top:  -125.5px;
+
+}
